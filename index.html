@@ -73,112 +73,128 @@
     </header>
     <main class="main-index">
       <h1 class="viusally-hidden">Интернет-магазин «Девайс»</h1>
-      <section class="promo-gallery">
-        <h2 class="visually-hidden">Галерея промо товаров</h2>
-        <img class="promo-gallery__slider-image" src="" alt="Квадрокоптер">
-        <img class="promo-gallery__slider-image" src="" alt="Фитнес-браслет">
-        <img class="promo-gallery__slider-image" src="" alt="Палка для селфи">
-        <button class="promo-gallery__slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="promo-gallery__slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
-      </section>
-      <section class="promo-description">
-        <h2 class="visually-hidden">Описание промо товаров</h2>
-        <span class="promo-description__product-number">01</span>
-        <h3 class="promo-description__title">Порхает как бабочка, жалит как пчела!</h3>
-        <p class="promo-description__title-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="button button-details" href="#">Подробнее</a>
-        <ol class="promo-slider-pagination">
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 товар</span>
-            </button>
-          </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">2 товар</span>
-            </button>
-          </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">3 товар</span>
-            </button>
-          </li>
-        </ol>
-        <ul class="product-features">
-          <li class="product-features__item">
-            <b class="product-features__measurement">800 м</b><br>
-            <span class="product-features__measurement-desc">Дальность полёта</span>
-          </li>
-          <li class="product-features__item">
-            <b class="product-features__measurement">50 м</b><br>
-            <span class="product-features__measurement-desc">Радиус поражения</span>
-          </li>
-        </ul>
-        <span class="promo-description__product-number">02</span>
-        <h3 class="promo-description__title">Худеем правильно!</h3>
-        <p class="promo-description__title-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        <a class="button button-details" href="#">Подробнее</a>
-        <ol class="promo-slider-pagination">
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">1 товар</span>
-            </button>
-          </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">2 товар</span>
-            </button>
-          </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">3 товар</span>
-            </button>
-          </li>
-        </ol>
-        <ul class="product-features">
-          <li class="product-features__item">
-            <b class="product-features__measurement">48 часов</b><br>
-            <span class="product-features__measurement-desc">Без подзарядки</span>
-          </li>
-        </ul> <span class="promo-description__product-number">03</span>
-        <h3 class="promo-description__title">Делай селфи, как Бен Стиллер!</h3>
-        <p class="promo-description__title-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-        <a class="button button-details" href="#">Подробнее</a>
-        <ol class="promo-slider-pagination">
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">1 товар</span>
-            </button>
-          </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">2 товар</span>
-            </button>
-          </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">3 товар</span>
-            </button>
-          </li>
-        </ol>
-        <ul class="product-features">
-          <li class="product-features__item">
-            <b class="product-features__measurement">8,5 м</b><br>
-            <span class="product-features__measurement-desc">Длина палки</span>
-          </li>
-          <li class="product-features__item">
-            <b class="product-features__measurement">5 кг</b><br>
-            <span class="product-features__measurement-desc">Вес палки</span>
-          </li>
-          <li class="product-features__item">
-            <b class="product-features__measurement">Карбон</b><br>
-            <span class="product-features__measurement-desc">Материал</span>
-          </li>
-        </ul>
+      <section class="promo-products">
+        <h2 class="visually-hidden">Промо товары</h2>
+        <div class="promo-products-wrapper">
+          <img class="promo-products-slider-image" src="" alt="Квадрокоптер">
+          <button class="promo-products-slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="promo-products-slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+          <span class="promo-products-number">01</span>
+          <h3 class="promo-products-title">Порхает как бабочка, жалит как пчела!</h3>
+          <p class="promo-products-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="button button-details" href="#">Подробнее</a>
+          <ol class="promo-products-slider-pagination">
+            <li class="promo-products-slider-pagination__item">
+              <button class="promo-products-slider-pagination-button promo-products-slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 товар</span>
+              </button>
+            </li>
+            <li class="promo-products-slider-pagination-item">
+              <button class="promo-products-slider-pagination-button" type="button">
+                <span class="visually-hidden">2 товар</span>
+              </button>
+            </li>
+            <li class="promo-products-slider-pagination-item">
+              <button class="promo-products-slider-pagination-button" type="button">
+                <span class="visually-hidden">3 товар</span>
+              </button>
+            </li>
+          </ol>
+          <ul class="product-features">
+            <li class="product-features__item">
+              <b class="product-features-measurement">800 м</b><br>
+              <span class="product-features-measurement-desc">Дальность полёта</span>
+            </li>
+            <li class="product-features-item">
+              <b class="product-features-measurement">50 м</b><br>
+              <span class="product-features-measurement-desc">Радиус поражения</span>
+            </li>
+          </ul>
+        </div>
+        <div class="promo-products-wrapper">
+          <img class="promo-products-slider-image" src="" alt="Фитнес-браслет">
+          <button class="promo-products-slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="promo-products-slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+          <span class="promo-products-number">02</span>
+          <h3 class="promo-products-title">Худеем правильно!</h3>
+          <p class="promo-products-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="button button-details" href="#">Подробнее</a>
+          <ol class="promo-products-slider-pagination">
+            <li class="promo-products-slider-pagination__item">
+              <button class="promo-products-slider-pagination-button" type="button">
+                <span class="visually-hidden">1 товар</span>
+              </button>
+            </li>
+            <li class="promo-products-slider-pagination-item">
+              <button class="promo-products-slider-pagination-button promo-products-slider-pagination-button-current" type="button">
+                <span class="visually-hidden">2 товар</span>
+              </button>
+            </li>
+            <li class="promo-products-slider-pagination-item">
+              <button class="promo-products-slider-pagination-button" type="button">
+                <span class="visually-hidden">3 товар</span>
+              </button>
+            </li>
+          </ol>
+          <ul class="product-features">
+            <li class="product-features__item">
+              <b class="product-features-measurement">48 часов</b><br>
+              <span class="product-features-measurement-desc">Без подзарядки</span>
+            </li>
+          </ul>
+        </div>
+        <div class="promo-products-wrapper">
+          <img class="promo-products-slider-image" src="" alt="Палка для селфи">
+          <button class="promo-products-slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="promo-products-slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+          <span class="promo-products-number">03</span>
+          <h3 class="promo-products-title">Делай селфи, как Бен Стиллер!</h3>
+          <p class="promo-products-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+          <a class="button button-details" href="#">Подробнее</a>
+          <ol class="promo-products-slider-pagination">
+            <li class="promo-products-slider-pagination__item">
+              <button class="promo-products-slider-pagination-button" type="button">
+                <span class="visually-hidden">1 товар</span>
+              </button>
+            </li>
+            <li class="promo-products-slider-pagination-item">
+              <button class="promo-products-slider-pagination-button" type="button">
+                <span class="visually-hidden">2 товар</span>
+              </button>
+            </li>
+            <li class="promo-products-slider-pagination-item">
+              <button class="promo-products-slider-pagination-button promo-products-slider-pagination-button-current" type="button">
+                <span class="visually-hidden">3 товар</span>
+              </button>
+            </li>
+          </ol>
+          <ul class="product-features">
+            <li class="product-features__item">
+              <b class="product-features-measurement">8,5 м</b><br>
+              <span class="product-features-measurement-desc">Длина палки</span>
+            </li>
+            <li class="product-features-item">
+              <b class="product-features-measurement">5 кг</b><br>
+              <span class="product-features-measurement-desc">Вес палки</span>
+            </li>
+            <li class="product-features-item">
+              <b class="product-features-measurement">Карбон</b><br>
+              <span class="product-features-measurement-desc">Материал</span>
+            </li>
+          </ul>
+        </div>
       </section>
       <nav class="secondary-nav">
         <ul class="secondary-nav-item">
@@ -204,63 +220,63 @@
       </nav>
       <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
-        <div class="first-service">
-          <ol class="service-slider-pagination">
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button service-slider-pagination-button-current" type="button">
-                <span class="service-slider-pagination-name">Доставка</span>
+        <div class="services-wrapper">
+          <ol class="services-slider-pagination">
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button services-slider-pagination-button-current" type="button">
+                <span class="services-slider-pagination-name">Доставка</span>
               </button>
             </li>
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button" type="button">
-                <span class="service-slider-pagination-name">Гарантия</span>
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button" type="button">
+                <span class="services-slider-pagination-name">Гарантия</span>
               </button>
             </li>
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button" type="button">
-                <span class="service-slider-pagination-name">Кредит</span>
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button" type="button">
+                <span class="services-slider-pagination-name">Кредит</span>
               </button>
             </li>
           </ol>
           <h3 class="services-title">Доставка</h3>
           <p class="services-desc">Мы с удовольствием доставим ваш товар прямок вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
-        <div class="second-service">
-          <ol class="service-slider-pagination">
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button" type="button">
-                <span class="service-slider-pagination-name">Доставка</span>
+        <div class="services-wrapper">
+          <ol class="services-slider-pagination">
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button" type="button">
+                <span class="services-slider-pagination-name">Доставка</span>
               </button>
             </li>
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button service-slider-pagination-button-current" type="button">
-                <span class="service-slider-pagination-name">Гарантия</span>
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button services-slider-pagination-button-current" type="button">
+                <span class="services-slider-pagination-name">Гарантия</span>
               </button>
             </li>
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button" type="button">
-                <span class="service-slider-pagination-name">Кредит</span>
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button" type="button">
+                <span class="services-slider-pagination-name">Кредит</span>
               </button>
             </li>
           </ol>
           <h3 class="services-title">Гарантия</h3>
           <p class="services-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </div>
-        <div class="third-service">
-          <ol class="service-slider-pagination">
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button" type="button">
-                <span class="service-slider-pagination-name">Доставка</span>
+        <div class="services-wrapper">
+          <ol class="services-slider-pagination">
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button" type="button">
+                <span class="services-slider-pagination-name">Доставка</span>
               </button>
             </li>
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button" type="button">
-                <span class="service-slider-pagination-name">Гарантия</span>
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button" type="button">
+                <span class="services-slider-pagination-name">Гарантия</span>
               </button>
             </li>
-            <li class="service-slider-pagination-item">
-              <button class="service-slider-pagination-button service-slider-pagination-button-current" type="button">
-                <span class="service-slider-pagination-name">Кредит</span>
+            <li class="services-slider-pagination-item">
+              <button class="services-slider-pagination-button services-slider-pagination-button-current" type="button">
+                <span class="services-slider-pagination-name">Кредит</span>
               </button>
             </li>
           </ol>
@@ -317,5 +333,8 @@
         <span class="distribution-text">Это бесплатно</span>
       </section>
     </main>
+    <footer class="page-footer">
+
+    </footer>
   </body>
 </html>
