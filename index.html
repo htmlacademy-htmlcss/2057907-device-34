@@ -6,27 +6,25 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="main-logo">
-        <a href="index.html" class="main-logo__link">
-          <img class="page-header-logo" src="" alt="Логотип интернет-магазина «Девайс»" />
-        </a>
-      </div>
       <nav class="navigation">
+        <a href="index.html" class="navigation-logo-link">
+          <img class="page-header-logo" src="#" alt="Логотип интернет-магазина «Девайс»"/>
+        </a>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="search-text" class="search-text"></label>
           <input class="field" type="text" id="search-text" name="search-text" placeholder="Текст поиска">
           <button class="button search-button" type="submit">Найти</button>
         </form>
         <ul class="navigation__user-profile-list">
-          <li class="navigation__user-profile-item ">
+          <li class="navigation__user-profile-item">
             <a class="navigation__user-profile-link" href="#">Войти</a>
           </li>
         </ul>
         <ul class="navigation__user-profile-list">
-          <li class="navigation__user-profile-item ">
+          <li class="navigation__user-profile-item">
             <a class="navigation__user-profile-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation__user-profile-item ">
+          <li class="navigation__user-profile-item">
             <a class="navigation__user-profile-link" href="#">Корзина</a>
           </li>
         </ul>
@@ -76,7 +74,7 @@
       <section class="promo-products">
         <h2 class="visually-hidden">Промо товары</h2>
         <div class="promo-products-wrapper">
-          <img class="promo-products-slider-image" src="" alt="Квадрокоптер">
+          <img class="promo-products-slider-image" src="#" alt="Квадрокоптер">
           <button class="promo-products-slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
@@ -84,7 +82,7 @@
             <span class="visually-hidden">Следующее фото</span>
           </button>
           <span class="promo-products-number">01</span>
-          <h3 class="promo-products-title">Порхает как бабочка, жалит как пчела!</h3>
+          <p class="promo-products-title">Порхает как бабочка, жалит как пчела!</p>
           <p class="promo-products-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="button button-details" href="#">Подробнее</a>
           <ol class="promo-products-slider-pagination">
@@ -116,7 +114,7 @@
           </table>
         </div>
         <div class="promo-products-wrapper">
-          <img class="promo-products-slider-image" src="" alt="Фитнес-браслет">
+          <img class="promo-products-slider-image" src="#" alt="Фитнес-браслет">
           <button class="promo-products-slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
@@ -124,7 +122,7 @@
             <span class="visually-hidden">Следующее фото</span>
           </button>
           <span class="promo-products-number">02</span>
-          <h3 class="promo-products-title">Худеем правильно!</h3>
+          <p class="promo-products-title">Худеем правильно!</p>
           <p class="promo-products-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="button button-details" href="#">Подробнее</a>
           <ol class="promo-products-slider-pagination">
@@ -154,7 +152,7 @@
           </table>
         </div>
         <div class="promo-products-wrapper">
-          <img class="promo-products-slider-image" src="" alt="Палка для селфи">
+          <img class="promo-products-slider-image" src="#" alt="Палка для селфи">
           <button class="promo-products-slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
@@ -162,7 +160,7 @@
             <span class="visually-hidden">Следующее фото</span>
           </button>
           <span class="promo-products-number">03</span>
-          <h3 class="promo-products-title">Делай селфи, как Бен Стиллер!</h3>
+          <p class="promo-products-title">Делай селфи, как Бен Стиллер!</p>
           <p class="promo-products-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="button button-details" href="#">Подробнее</a>
           <ol class="promo-products-slider-pagination">
@@ -196,12 +194,13 @@
           </table>
         </div>
       </section>
-      <nav class="secondary-nav">
+      <section class="secondary-nav">
+        <h2 class="visually-hidden">Навигация каталога</h2>
         <ul class="secondary-nav-item">
           <li class="secondary-nav-list">
             <a class="secondary-nav-link" href="#">Виртуальная реальность </a>
           </li>
-          <li class="secondary-nav-list"
+          <li class="secondary-nav-list">
             <a class="secondary-nav-link" href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="secondary-nav-list">
@@ -217,7 +216,7 @@
             <a class="secondary-nav-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
-      </nav>
+      </section>
       <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
         <div class="services-wrapper">
@@ -335,12 +334,14 @@
     </main>
     <footer class="page-footer">
       <section class="footer-contacts">
-        <img class="footer-contacts-logo" src="" alt="Логотип интернет-магазина «Девайс»">
+        <h2 class="visually-hidden">Адрес</h2>
+        <img class="footer-contacts-logo" src="#" alt="Логотип интернет-магазина «Девайс»">
         <address class="footer-contacts-address">
           <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </section>
       <section class="footer-navigation">
+        <h2 class="visually-hidden">Навигация и социальные сети</h2>
         <ul class="footer-navigation-page">
           <li class="footer-navigation-item">
             <a class="footer-navigation-link" href="#">Доставка</a>
@@ -371,11 +372,12 @@
         </ul>
       </section>
       <section class="footer-phone">
+        <h2 class="visually-hidden">Телефон</h2>
         <address class="footer-phone-address">
           <a class="footer-phone-address-text" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
         <a class="footer-phone-about" href="https://htmlacademy.ru/">
-          <img class="footer-phone-about-logo" src="" alt="Логотип «HTML Academy»">
+          <img class="footer-phone-about-logo" src="#" alt="Логотип «HTML Academy»">
         </a>
       </section>
     </footer>
