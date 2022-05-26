@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Девайс»</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="search-text" class="search-text"></label>
-        <input class="field" type="text" id="search-text" name="search-text" placeholder="Текст поиска">
+        <input class="search-field" type="text" id="search-text" name="search-text" placeholder="Текст поиска">
         <button class="button search-button" type="submit">Найти</button>
       </form>
       <ul class="navigation__user-profile-list">
@@ -23,7 +24,7 @@
           <a class="navigation__user-profile-link" href="#">Коля Петухов</a>
         </li>
         <li class="navigation__user-profile-item ">
-          <a class="navigation__user-profile-link" href="#">Выйти</a>
+          <a class="navigation__user-profile-link-logout" href="#">Выйти</a>
         </li>
       </ul>
       <ul class="navigation__user-profile-list">
@@ -204,7 +205,7 @@
           <b class="product-card-price">1 500 ₽</b>
         </li>
       </ul>
-      <button class="product-show-more" type="button">Загрузить ещё</button>
+      <button class="product-show-more-button" type="button">Загрузить ещё</button>
       <ul class="product-pagination">
         <li class="product-pagination-item">
           <a class="product-pagination-link product-pagination-prev product-pagination-disabled">
@@ -212,23 +213,23 @@
           </a>
         </li>
         <li class="product-pagination-item">
-          <a class="pagination-link">1</a>
+          <a class="pagination-page-number">1</a>
         </li>
         <li class="product-pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="pagination-page-number" href="#">2</a>
         </li>
         <li class="product-pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="pagination-page-number" href="#">3</a>
         </li>
         <li class="product-pagination-item">
-          <a class="pagination-link" href="#">...</a>
+          <a class="pagination-page-number" href="#">...</a>
         </li>
         <li class="product-pagination-item">
-          <a class="pagination-link" href="#">15</a>
+          <a class="pagination-page-number" href="#">15</a>
         </li>
         <li class="product-pagination-item">
           <a class="product-pagination-link product-pagination-next" href="#">
-            <span class="visually-hidden">Вперёд</span>
+            <span class="product-pagination-text">Вперёд</span>
           </a>
         </li>
       </ul>

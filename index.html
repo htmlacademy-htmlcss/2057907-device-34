@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Девайс»</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -15,8 +16,8 @@
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="search-text" class="search-text"></label>
-        <input class="field" type="text" id="search-text" name="search-text" placeholder="Текст поиска">
-        <button class="button search-button" type="submit">Найти</button>
+        <input class="search-field" type="text" id="search-text" name="search-text" placeholder="Текст поиска">
+        <button class="search-button" type="submit">Найти</button>
       </form>
       <ul class="navigation__user-profile-list">
         <li class="navigation__user-profile-item">
@@ -74,7 +75,7 @@
     </nav>
   </header>
   <main class="main-index">
-    <h1 class="viusally-hidden">Интернет-магазин «Девайс»</h1>
+    <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
     <section class="promo-products">
       <h2 class="visually-hidden">Промо товары</h2>
       <div class="promo-products-wrapper">
@@ -110,13 +111,13 @@
           </li>
         </ol>
         <table class="product-features">
-          <tr class="product-features-measurement">
-            <td class="product-features-measurement-desc">800 м</td>
-            <td class="product-features-measurement-desc">50 м</td>
+          <tr class="product-features-table">
+            <td class="product-features-measurement">800 м</td>
+            <td class="product-features-measurement">50 м</td>
           </tr>
-          <tr class="product-features-measurement">
-            <td class="product-features-measurement-desc">Дальность полёта</td>
-            <td class="product-features-measurement-desc">Радиус поражения</td>
+          <tr class="product-features-table">
+            <td class="product-features-desc">Дальность полёта</td>
+            <td class="product-features-desc">Радиус поражения</td>
           </tr>
         </table>
       </div>
@@ -153,11 +154,11 @@
           </li>
         </ol>
         <table class="product-features">
-          <tr class="product-features-measurement">
-            <td class="product-features-measurement-desc">48 часов</td>
+          <tr class="product-features-table">
+            <td class="product-features-measurement">48 часов</td>
           </tr>
-          <tr class="product-features-measurement">
-            <td class="product-features-measurement-desc">Без подзарядки</td>
+          <tr class="product-features-table">
+            <td class="product-features-desc">Без подзарядки</td>
           </tr>
         </table>
       </div>
@@ -194,15 +195,15 @@
           </li>
         </ol>
         <table class="product-features">
-          <tr class="product-features-measurement">
-            <td class="product-features-measurement-desc">8,5 м</td>
-            <td class="product-features-measurement-desc">5 кг</td>
-            <td class="product-features-measurement-desc">Карбон</td>
+          <tr class="product-features-table">
+            <td class="product-features-measurement">8,5 м</td>
+            <td class="product-features-measurement">5 кг</td>
+            <td class="product-features-measurement">Карбон</td>
           </tr>
-          <tr class="product-features-measurement">
-            <td class="product-features-measurement-desc">Длина палки</td>
-            <td class="product-features-measurement-desc">Вес палки</td>
-            <td class="product-features-measurement-desc">Материал</td>
+          <tr class="product-features-table">
+            <td class="product-features-desc">Длина палки</td>
+            <td class="product-features-desc">Вес палки</td>
+            <td class="product-features-desc">Материал</td>
           </tr>
         </table>
       </div>
@@ -271,17 +272,17 @@
       <div class="services-wrapper">
         <ol class="services-slider-pagination">
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button services-slider-pagination-button-current" type="button">
+            <button class="button slider-pagination-button-current" type="button">
               <span class="services-slider-pagination-name">Доставка</span>
             </button>
           </li>
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button" type="button">
+            <button class="button" type="button">
               <span class="services-slider-pagination-name">Гарантия</span>
             </button>
           </li>
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button" type="button">
+            <button class="button" type="button">
               <span class="services-slider-pagination-name">Кредит</span>
             </button>
           </li>
@@ -294,17 +295,17 @@
       <div class="services-wrapper">
         <ol class="services-slider-pagination">
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button" type="button">
+            <button class="button" type="button">
               <span class="services-slider-pagination-name">Доставка</span>
             </button>
           </li>
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button services-slider-pagination-button-current" type="button">
+            <button class="button slider-pagination-button-current" type="button">
               <span class="services-slider-pagination-name">Гарантия</span>
             </button>
           </li>
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button" type="button">
+            <button class="button" type="button">
               <span class="services-slider-pagination-name">Кредит</span>
             </button>
           </li>
@@ -318,17 +319,17 @@
       <div class="services-wrapper">
         <ol class="services-slider-pagination">
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button" type="button">
+            <button class="button" type="button">
               <span class="services-slider-pagination-name">Доставка</span>
             </button>
           </li>
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button" type="button">
+            <button class="button" type="button">
               <span class="services-slider-pagination-name">Гарантия</span>
             </button>
           </li>
           <li class="services-slider-pagination-item">
-            <button class="services-slider-pagination-button services-slider-pagination-button-current" type="button">
+            <button class="button slider-pagination-button-current" type="button">
               <span class="services-slider-pagination-name">Кредит</span>
             </button>
           </li>
@@ -383,8 +384,8 @@
         также акции, спецпредложения и вот это вот всё.</p>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="distribution-email"></label>
-        <input class="field" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email"
-          required>
+        <input class="distribution-field" placeholder="Ваш e-mail" type="email" name="distribution-email"
+          id="distribution-email" required>
         <button class="distribution-button" type="submit">
           <span class="distribution-button-text">Подписаться</span>
         </button>
