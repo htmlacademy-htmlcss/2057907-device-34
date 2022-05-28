@@ -101,6 +101,7 @@ body {
   height: 55px;
   background-color:#FFFFFF;
   border: 3px solid #E5E5E5;
+  box-sizing: border-box;
 }
 
 /* Index  */
@@ -222,7 +223,7 @@ body {
   color: inherit;
 }
 /* promo sliders */
-.main-conteiner {
+.main-container {
 flex-grow: 1;
 }
 
@@ -509,6 +510,11 @@ Header  */
 }
 
 /* Breadcrumbs */
+.inner-header {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .inner-header-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
@@ -524,8 +530,11 @@ Header  */
 
 /* Catalog header */
 .catalog-header {
-  background-color: #F0F0F0;
+  padding: 0;
+  width: 1160px;
+  margin: 0 auto;
 }
+
 
 .catalog-header-name {
   font-family: Raleway, sans-serif;
@@ -546,6 +555,19 @@ Header  */
 }
 
 /* Catalog Filter */
+.catalog-products {
+background-color: #F0F0F0;
+}
+
+.catalog-products-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+}
 
 .catalog-filter-title {
   font-weight: 700;
@@ -560,7 +582,15 @@ Header  */
 }
 
 .catalog-filter-group  {
+  width: 200px;
+  margin: 0;
+  padding-right: 60px;
+  padding-left: 60px;
   border: none;
+}
+
+.catalog-filter-list {
+  padding: 0;
 }
 
 .catalog-filter {
@@ -568,6 +598,16 @@ Header  */
 }
 
 /* Products cards */
+.catalog-right-column {
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  width: 840px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.product-list {
+  padding: 0;
+}
 
 .product-card-image {
   display: block;
