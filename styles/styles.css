@@ -121,7 +121,6 @@ body {
   background: rgb(240,240,240);
   background: linear-gradient(180deg, rgba(240,240,240,1) 40%, rgba(255,225,127,1) 40%, rgba(255,225,127,1) 60%, rgba(240,240,240,1) 60%);
   border: none;
-  padding: 0;
   padding: 9px 0 10px 0;
 }
 
@@ -217,7 +216,7 @@ body {
   height: 40px;
   border: 2px solid #000000;
   border-right: 1px solid #000000;
-  border-radius: 50px 0px 0px 50px;
+  border-radius: 50px 0 0 50px;
   padding: 0;
   padding-left: 48px;
   box-sizing: border-box;
@@ -230,7 +229,7 @@ body {
   height: 40px;
   border: 2px solid #000000;
   border-left: 1px solid #000000;
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 0 50px 50px 0;
   padding: 0;
   box-sizing: border-box;
   margin-right: 26px;
@@ -1002,4 +1001,3 @@ background-color: #F0F0F0;
   text-align: center;
   vertical-align: middle;
 }
-
