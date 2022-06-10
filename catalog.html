@@ -14,39 +14,38 @@
         <img class="page-header-logo" src="images/header/header-logo.svg" width="145" height="36"
           alt="Логотип интернет-магазина «Девайс»" />
       </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="search-text" class="search-text"></label>
-        <input class="search-field" type="text" id="search-text" name="search-text" placeholder="Текст поиска">
-        <button class="search-button" type="submit">Найти</button>
-      </form>
-      <ul class="navigation__user-profile-login-list">
-        <li class="navigation__user-profile-item ">
-          <a class="navigation__user-profile-link" href="#">Коля Петухов</a>
-        </li>
-        <li class="navigation__user-profile-item ">
-          <a class="navigation__user-profile-logout" href="#">Выйти</a>
-        </li>
-      </ul>
-      <ul class="navigation__user-profile-list">
-        <li class="navigation__user-profile-item ">
-          <a class="navigation__user-profile-link" href="#">Сравнить</a>
-        </li>
-        <li class="navigation__user-profile-item ">
-          <a class="navigation__user-profile-link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul class="navigation__main-nav-catalog">
-        <li class="navigation__main-nav-item">
-          <a class="navigation__main-nav-link" href="#">Каталог товаров</a>
-          <button class="navigation__main-nav-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
+      <div class="user-profile-wrapper">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="search-text" class="search-text"></label>
+          <input class="search-field" type="text" id="search-text" name="search-text" placeholder="Текст поиска">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <ul class="navigation__user-profile-login-list">
+          <li class="navigation__user-profile-item">
+            <a class="navigation__user-profile-link" href="#">Войти</a>
+          </li>
+        </ul>
+        <ul class="navigation__user-profile-list">
+          <li class="navigation__user-profile-item">
+            <a class="navigation__user-profile-link" href="#">Сравнить</a>
+          </li>
+          <div class="cart-counter">2</div>
+          <li class="navigation__user-profile-item">
+            <a class="navigation__user-profile-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav-wrapper">
+        <ul class="navigation__main-nav-catalog">
+          <li class="navigation__main-nav-item">
+            <a class="navigation__main-nav-link" href="#">Каталог товаров</a>
+          </li>
           <ul class="main-nav-submenu-list">
             <li class="main-nav-submenu-item">
               <a class="main-nav-submenu-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="main-nav-submenu-item">
-              <a class="main-nav-submenu-link" href="#">Моноподы для cелфи</a>
+              <a class="main-nav-submenu-link" href="catalog.html">Моноподы для cелфи</a>
             </li>
             <li class="main-nav-submenu-item">
               <a class="main-nav-submenu-link" href="#">Экшн-камеры</a>
@@ -61,19 +60,22 @@
               <a class="main-nav-submenu-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </li>
-      </ul>
-      <ul class="navigation__main-nav-list">
-        <li class="navigation__main-nav-item">
-          <a class="navigation__main-nav-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation__main-nav-item">
-          <a class="navigation__main-nav-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation__main-nav-item">
-          <a class="navigation__main-nav-link" href="#">Контакты</a>
-        </li>
-      </ul>
+        </ul>
+        <button class="navigation__main-nav-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <ul class="navigation__main-nav-list">
+          <li class="navigation__main-nav-item">
+            <a class="navigation__main-nav-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation__main-nav-item">
+            <a class="navigation__main-nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation__main-nav-item">
+            <a class="navigation__main-nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main-container main-inner">
