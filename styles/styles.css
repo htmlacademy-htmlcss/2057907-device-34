@@ -960,6 +960,7 @@ background-color: #F0F0F0;
 
 .product-card-image {
   display: block;
+  object-fit: contain;
   width: 360px;
   height: 380px;
   background-color: #F0F0F0;
