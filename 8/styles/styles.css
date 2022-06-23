@@ -108,7 +108,7 @@ body {
   height: 60px;
   border: none;
   background-color: inherit;
-  background-image: url(/images/decorative/slider-arrow.svg);
+  background-image: url(../images/decorative/slider-arrow.svg);
   background-repeat: no-repeat;
   background-size: 20px 60px;
 }
@@ -274,7 +274,7 @@ body {
   width:125px;
   height:100px;
   background: #FFE17F;
-  background-image: url(/images/decorative/truck.svg);
+  background-image: url(../images/decorative/truck.svg);
   background-repeat: no-repeat;
   background-size: 47px 31px;
   background-position: 50% 50%;
@@ -1074,7 +1074,7 @@ flex-grow: 1;
 
 .distribution-text {
   padding-left: 32px;
-  background-image:url(/images/decorative/checkmark.svg);
+  background-image:url(../images/decorative/checkmark.svg);
   background-size: 14px 14px;
   background-repeat: no-repeat;
   background-position: center left;
@@ -1408,7 +1408,7 @@ Header  */
   width: 4px;
   height: 7px;
   content: "";
-  background-image:url(/images/decorative/arrow-icon.svg);
+  background-image:url(../images/decorative/arrow-icon.svg);
   top: 12px;
   right: -20px;
 }
