@@ -1319,6 +1319,10 @@ flex-grow: 1;
   bottom: 0;
 }
 
+.footer-navigation-social-link:focus-visible {
+  outline: none;
+}
+
 .footer-social-icon {
   position: absolute;
   top: 0;
