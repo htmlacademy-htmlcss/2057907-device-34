@@ -227,6 +227,10 @@ body {
   opacity: 1;
 }
 
+.navigation-main-nav-button:active .submenu-container {
+  display: flex;
+}
+
 .navigation-main-nav-button:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
@@ -500,9 +504,18 @@ body {
   outline-offset: 2px;
 }
 
+.navigation-user-profile-item:active .popover {
+  display: block;
+}
+
+.navigation-user-profile-item:hover .popover {
+  display: block;
+}
+
 .navigation-user-profile-item:focus-within .popover {
   display: block;
 }
+
 
 .search-form {
   position: relative;
