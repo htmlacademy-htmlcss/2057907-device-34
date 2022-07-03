@@ -952,6 +952,10 @@ body {
   margin-bottom: 53px;
 }
 
+.sliders-change-close {
+  display: none;
+}
+
 /* secondary navigatrion */
 .secondary-nav {
   margin-bottom: 41px;
@@ -1043,6 +1047,10 @@ body {
   min-height: 319px;
   margin: 0 auto;
   padding-bottom: 63px;
+}
+
+.services-close {
+  display: none;
 }
 
 .services-slider-pagination {
