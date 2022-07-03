@@ -389,6 +389,7 @@ body {
   border: 3px solid #E5E5E5;
   box-sizing: border-box;
   margin-bottom: 44px;
+  color: #000000;
 }
 
 .product-show-more-button:hover {
@@ -533,6 +534,7 @@ body {
 
 .search-field,
 .search-button {
+  color: #000000;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1335,6 +1337,8 @@ body {
   min-height: 57px;
   border: 3px #c4c4c4 solid;
   cursor: pointer;
+  background: #f0f0f0;
+  color: #000000;
 }
 
 .distribution-button:hover {
@@ -1996,6 +2000,18 @@ Header  */
   color: #000000;
 }
 
+.catalog-select-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  width: 141px;
+  min-height: 30px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: #000000;
+}
+
 .breadcrumbs-link:hover,
 .catalog-select-control:hover {
   opacity: 0.6;
@@ -2078,17 +2094,6 @@ Header  */
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
-
-.catalog-select-control {
-  font-family: "Rubik", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  width: 141px;
-  min-height: 30px;
-  border: none;
-  background-color: #f0f0f0;
-  cursor: pointer;
 }
 
 /* Catalog Filter */
