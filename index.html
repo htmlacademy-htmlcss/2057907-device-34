@@ -4,6 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Девайс»</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffe17f">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -24,9 +32,9 @@
           </div>
           <button class="search-button" type="submit">Найти</button>
         </form>
-        <ul class="navigation__user-profile-login-list">
-          <li class="navigation__user-profile-item">
-            <a class="navigation__user-profile-link" href="#">
+        <ul class="navigation-user-profile-login-list">
+          <li class="navigation-user-profile-item">
+            <a class="navigation-user-profile-link" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="12"
                 viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -37,9 +45,9 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation__user-profile-list">
-          <li class="navigation__user-profile-item">
-            <a class="navigation__user-profile-link-compare" href="#">
+        <ul class="navigation-user-profile-list">
+          <li class="navigation-user-profile-item">
+            <a class="navigation-user-profile-link-compare" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="10" height="12"
                 viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" fill="#000" />
@@ -47,8 +55,8 @@
               Сравнить
             </a>
           </li>
-          <li class="navigation__user-profile-item">
-            <a class="navigation__user-profile-link user-profile-cart-link" href="#">
+          <li class="navigation-user-profile-item">
+            <a class="navigation-user-profile-link user-profile-cart-link" href="#">
               <span class="cart-counter">2</span>
               <svg class="navigation-cart-icon" aria-hidden="true" focusable="false" width="16" height="14"
                 viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,13 +108,9 @@
         </ul>
       </div>
       <div class="main-nav-container">
-        <ul class="navigation__main-nav-catalog">
-          <li class="navigation__main-nav-item">
-            <button class="navigation__main-nav-button" type="button">Каталог товаров
-              <svg class="main-nav-button-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="#000" />
-              </svg>
+        <ul class="navigation-main-nav-catalog">
+          <li class="navigation-main-nav-item">
+            <button class="navigation-main-nav-button" type="button">Каталог товаров
               <span class="visually-hidden">Открыть</span>
             </button>
             <div class="submenu-container">
@@ -137,15 +141,15 @@
             </div>
           </li>
         </ul>
-        <ul class="navigation__main-nav-list">
-          <li class="navigation__main-nav-item">
-            <a class="navigation__main-nav-link" href="#">Доставка</a>
+        <ul class="navigation-main-nav-list">
+          <li class="navigation-main-nav-item">
+            <a class="navigation-main-nav-link" href="#">Доставка</a>
           </li>
-          <li class="navigation__main-nav-item">
-            <a class="navigation__main-nav-link" href="#">Гарантия</a>
+          <li class="navigation-main-nav-item">
+            <a class="navigation-main-nav-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation__main-nav-item">
-            <a class="navigation__main-nav-link" href="#">Контакты</a>
+          <li class="navigation-main-nav-item">
+            <a class="navigation-main-nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </div>
@@ -359,7 +363,7 @@
               <figure class="secondary-nav-figure">
                 <img class="secondary-nav-image" src="images/content/monopods.svg" width="160" height="160"
                   alt="Моноподы для селфи">
-                <figcaption class="secondary-nav-text">Моноподы для селфи</figcaption>
+                <figcaption class="secondary-nav-text">Моноподы <br>для селфи</figcaption>
               </figure>
             </a>
           </li>
@@ -404,7 +408,7 @@
     </div>
     <section class="services">
       <h2 class="visually-hidden">Сервисы</h2>
-      <div class="services-container visually-hidden">
+      <div class="services-container">
         <ol class="services-slider-pagination">
           <li class="services-slider-pagination-item">
             <button class="slider-pagination-button-current" type="button">
@@ -424,14 +428,14 @@
         </ol>
         <div class="services-text">
           <h3 class="services-title">Доставка</h3>
-          <p class="services-desc">Мы с удовольствием доставим ваш товар прямок вашему подъезду совершенно
+          <p class="services-desc">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно
             бесплатно!
             Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
         <img class="services-image" src="images/content/delivery.svg" width="136" height="164" alt="Курьер с товаром">
       </div>
-      <div class="services-container">
+      <div class="services-container visually-hidden">
         <ol class="services-slider-pagination">
           <li class="services-slider-pagination-item">
             <button class="button slider-pagination-button" type="button">
@@ -536,19 +540,21 @@
     <section class="distribution">
       <div class="distribution-container">
         <h2 class="distribution-title">Подпишитесь на рассылку</h2>
-        <p class="distribution-desc">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+        <p class="distribution-desc">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
           распаковками,
           а
           также акции, спецпредложения и вот это вот всё.</p>
-        <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="distribution-email">E-mail</label>
-          <input class="distribution-field" placeholder="Ваш e-mail" type="email" name="distribution-email"
-            id="distribution-email" required>
-          <button class="distribution-button" type="submit">
-            <span class="distribution-button-text">Подписаться</span>
-          </button>
-        </form>
-        <span class="distribution-text">Это бесплатно</span>
+        <div class="distribution-form-text-wrapper">
+          <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="distribution-email">E-mail</label>
+            <div class="distribution-form-wrapper">
+              <input class="distribution-field" placeholder="Ваш e-mail" type="email" name="distribution-email"
+                id="distribution-email" required>
+              <button class="distribution-button" type="submit">Подписаться</button>
+            </div>
+          </form>
+          <span class="distribution-text">Это бесплатно</span>
+        </div>
       </div>
     </section>
   </main>
@@ -629,7 +635,7 @@
       </section>
     </div>
   </footer>
-  <div class="modal-container">
+  <div class="modal-container modal-close">
     <div class="modal modal-delivery">
       <section class="modal-content">
         <button class="modal-close-button">
@@ -668,15 +674,16 @@
                   сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
               </span>
             </span>
-          <span class="delivery-range-wrapper">
-            <button class="delivery-range-toggle delivery-toggle-min" type="button">
-              <span class="visually-hidden">Изменить количество в минус</span>
-            </button>
-            <input class="delivery-form-field counter-field" type="number" id="delivery-counter" name="delivery-counter" value="1" min="1" required>
-            <button class="delivery-range-toggle delivery-toggle-max" type="button">
-              <span class="visually-hidden">Изменить количество в плюс</span>
-            </button>
-          </span>
+            <span class="delivery-range-wrapper">
+              <button class="delivery-range-toggle delivery-toggle-min" type="button">
+                <span class="visually-hidden">Изменить количество в минус</span>
+              </button>
+              <input class="delivery-form-field counter-field" type="number" id="delivery-counter"
+                name="delivery-counter" value="1" min="1" required>
+              <button class="delivery-range-toggle delivery-toggle-max" type="button">
+                <span class="visually-hidden">Изменить количество в плюс</span>
+              </button>
+            </span>
           </p>
           <button class="button modal-button-submit" type="submit">Отправить</button>
         </form>
