@@ -4,11 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Девайс»</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffe17f">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page-header-catalog">
     <nav class="navigation">
       <a href="index.html" class="navigation-logo-link">
         <img class="page-header-logo" src="images/header/header-logo.svg" width="145" height="36"
@@ -24,9 +32,9 @@
           </div>
           <button class="search-button" type="submit">Найти</button>
         </form>
-        <ul class="navigation__user-profile-login-list">
-          <li class="navigation__user-profile-item">
-            <a class="navigation__user-profile-link" href="#">
+        <ul class="navigation-user-profile-login-list">
+          <li class="navigation-user-profile-item">
+            <a class="navigation-user-profile-link" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="12"
                 viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -36,13 +44,13 @@
               Коля Петухов
             </a>
           </li>
-          <li class="navigation__user-profile-item">
-            <a class="navigation__user-profile-logout" href="#">Выйти</a>
+          <li class="navigation-user-profile-item">
+            <a class="navigation-user-profile-logout" href="#">Выйти</a>
           </li>
         </ul>
-        <ul class="navigation__user-profile-list">
-          <li class="navigation__user-profile-item">
-            <a class="navigation__user-profile-link-compare" href="#">
+        <ul class="navigation-user-profile-list">
+          <li class="navigation-user-profile-item">
+            <a class="navigation-user-profile-link-compare" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="10" height="12"
                 viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" fill="#000" />
@@ -50,8 +58,8 @@
               Сравнить
             </a>
           </li>
-          <li class="navigation__user-profile-item">
-            <a class="navigation__user-profile-link user-profile-cart-link" href="#">
+          <li class="navigation-user-profile-item">
+            <a class="navigation-user-profile-link user-profile-cart-link" href="#">
               <span class="cart-counter">2</span>
               <svg class="navigation-cart-icon" aria-hidden="true" focusable="false" width="16" height="14"
                 viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,13 +111,9 @@
         </ul>
       </div>
       <div class="main-nav-container">
-        <ul class="navigation__main-nav-catalog">
-          <li class="navigation__main-nav-item">
-            <button class="navigation__main-nav-button" type="button">Каталог товаров
-              <svg class="main-nav-button-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="#000" />
-              </svg>
+        <ul class="navigation-main-nav-catalog">
+          <li class="navigation-main-nav-item">
+            <button class="navigation-main-nav-button" type="button">Каталог товаров
               <span class="visually-hidden">Открыть</span>
             </button>
             <div class="submenu-container">
@@ -140,15 +144,15 @@
             </div>
           </li>
         </ul>
-        <ul class="navigation__main-nav-list">
-          <li class="navigation__main-nav-item">
-            <a class="navigation__main-nav-link" href="#">Доставка</a>
+        <ul class="navigation-main-nav-list">
+          <li class="navigation-main-nav-item">
+            <a class="navigation-main-nav-link" href="#">Доставка</a>
           </li>
-          <li class="navigation__main-nav-item">
-            <a class="navigation__main-nav-link" href="#">Гарантия</a>
+          <li class="navigation-main-nav-item">
+            <a class="navigation-main-nav-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation__main-nav-item">
-            <a class="navigation__main-nav-link" href="#">Контакты</a>
+          <li class="navigation-main-nav-item">
+            <a class="navigation-main-nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </div>
@@ -360,7 +364,7 @@
                 <img class="product-card-image" src="images/catalog/follow-me-selfie-stick.jpg" width="360" height="380"
                   alt="Фотография товара">
                 <div class="card-wrapper">
-                  <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                  <h3 class="product-card-title">Селфи-палка «Следуй <br>за мной»</h3>
                   <b class="product-card-price">1 500 ₽</b>
                 </div>
                 <div class="product-card-new-icon visually-hidden">
@@ -371,33 +375,38 @@
             </li>
           </ul>
           <button class="product-show-more-button" type="button">Загрузить ещё</button>
-          <ul class="product-pagination">
-            <li class="product-pagination-item">
-              <a class="product-pagination-link product-pagination-prev product-pagination-disabled" href="#">
-                <span class="product-pagination-text">Назад</span>
-              </a>
-            </li>
-            <li class="product-pagination-item">
-              <a class="pagination-page-number" href="#">1</a>
-            </li>
-            <li class="product-pagination-item">
-              <a class="pagination-page-number" href="#">2</a>
-            </li>
-            <li class="product-pagination-item">
-              <a class="pagination-page-number" href="#">3</a>
-            </li>
-            <li class="product-pagination-item">
-              <a class="pagination-page-number" href="#">...</a>
-            </li>
-            <li class="product-pagination-item">
-              <a class="pagination-page-number" href="#">15</a>
-            </li>
-            <li class="product-pagination-item">
-              <a class="product-pagination-link product-pagination-next" href="#">
-                <span class="product-pagination-text">Вперёд</span>
-              </a>
-            </li>
-          </ul>
+          <div class="product-pagination-wrapper">
+            <ul class="product-pagination">
+              <li class="product-pagination-item">
+                <a class="product-pagination-link product-pagination-prev product-pagination-disabled" href="#">
+                  <span class="product-pagination-text">Назад</span>
+                </a>
+            </ul>
+            <ul class="product-pagination-number-list">
+              <li class="product-pagination-item">
+                <a class="pagination-page-number" href="#">1</a>
+              </li>
+              <li class="product-pagination-item">
+                <a class="pagination-page-number" href="#">2</a>
+              </li>
+              <li class="product-pagination-item">
+                <a class="pagination-page-number" href="#">3</a>
+              </li>
+              <li class="product-pagination-item">
+                <a class="pagination-page-number" href="#">...</a>
+              </li>
+              <li class="product-pagination-item">
+                <a class="pagination-page-number" href="#">15</a>
+              </li>
+            </ul>
+            <ul class="product-pagination">
+              <li class="product-pagination-item">
+                <a class="product-pagination-link product-pagination-next" href="#">
+                  <span class="product-pagination-text">Вперёд</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
