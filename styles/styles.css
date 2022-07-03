@@ -433,11 +433,23 @@ body {
 
 /* Header */
 .page-header {
+  position: relative;
   width: 1160px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 10%, rgba(255, 225, 127, 1) 10%);
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 10%, rgba(255, 225, 127, 1) 10%); */
   color: #000000;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.page-header::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ffe17f;
+  z-index: -10;
 }
 
 .page-header-catalog {
@@ -779,15 +791,6 @@ body {
   margin-right: 47px;
 }
 
-.navigation-main-nav-list .navigation-main-nav-item {
-  max-width: 128px;
-}
-
-.navigation-main-nav-list .navigation-main-nav-item:nth-child(3n) {
-  max-width: 130px;
-}
-
-
 .navigation-main-nav-item:focus-within .submenu-container {
   display: flex;
 }
@@ -819,26 +822,31 @@ body {
 
 .submenu-container {
   position: absolute;
+  top: 57px;
   z-index: 1;
   width: 1160px;
   left: -60px;
   padding-left: 60px;
   background-color: #ffe17f;
   display: none;
-  min-height: 180px;
+  min-height: 154px;
   box-sizing: border-box;
 }
 
 .main-nav-submenu-list {
   margin: 0;
   padding: 0;
-  width: 211px;
+  width: 252px;
   list-style-type: none;
   margin-bottom: 27px;
 }
 
-.main-nav-submenu-list:first-child {
-  width: 222px;
+.main-nav-submenu-list:nth-child(2) {
+  width: 212px;
+}
+
+.main-nav-submenu-item {
+  margin-bottom: 7px;
 }
 
 .main-nav-submenu-link {
@@ -1512,18 +1520,6 @@ body {
   margin-bottom: 10px;
 }
 
-.footer-navigation-item:nth-child(3n+1) {
-  max-width: 125px;
-}
-
-.footer-navigation-item:nth-child(3n+2) {
-  max-width: 121px;
-}
-
-.footer-navigation-item:nth-child(3n+3) {
-  max-width: 128px;
-}
-
 .footer-navigation-item:not(:nth-child(3n)) {
   margin-right: 35px;
 }
@@ -1634,7 +1630,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 72px 80px 72px 80px;
+  padding: 60px 72px 60px 72px;
   background-color: #ffffff;
 }
 
@@ -1667,10 +1663,10 @@ body {
 .modal-close-button::after {
   position: absolute;
   content: "";
-  top: 12px;
-  left: 0;
-  width: 26px;
-  height: 2px;
+  top: 11px;
+  left: -5px;
+  width: 33px;
+  height: 5px;
   background-color: #000000;
 }
 
@@ -2581,8 +2577,8 @@ Header  */
 
 .popover {
   position: absolute;
-  top: 33px;
-  right: -80px;
+  top: 36px;
+  right: -77px;
   z-index: 2;
   box-sizing: border-box;
   width: 320px;
